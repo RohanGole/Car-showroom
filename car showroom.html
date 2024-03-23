@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device=width, inital-scale=1.0"> <!--to make it work with responce-->
+    <title>Car showroom</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: monospace;
+    }
+    marquee{
+      font-size: 18px;
+      text-shadow: 12px 5px 5px rgb(104, 122, 196);
+    }
+    i{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 18px;
+      text-shadow: 12px 5px 5px black;
+    }
+    ul{
+        list-style: none;
+        font-size: 15px;
+    }
+    ul li{
+        display: inline-block;
+        position:relative;
+    }
+    ul li ul.dropdown li{
+        display: block;
+    }
+    ul li ul.dropdown {
+        width: 100%;
+        position: absolute;
+        display: none;
+    }
+    ul li a:hover{
+        background-color: rgb(207, 80, 80);
+        color: #f1eeee;
+    }
+    ul li:hover ul.dropdown{
+        display: block;
+    }
+    .nbar{
+        margin-left: 1100px;
+    }
+    .part1{
+        background-image: url(C:/Users/rosha/OneDrive/Documents/fortunershowroom/111.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: sticky;
+        height: 800px;
+        color: white;
+        /*background-attachment: fixed;*/ 
+    }
+    a { 
+        text-decoration: none; 
+        color: var(--primary-color); 
+        margin-right: 20px;
+        float: right;
+      }
+   h1{
+        text-align: center;
+        margin-top: 110px;
+        margin-bottom: 20px;
+      }
+.Welcome{
+        text-shadow: 3px 2px 5px rgb(33, 106, 140);
+      }
+   .book{
+        padding-left: 930px;
+        font-size: 13px;
+        text-shadow: 3px 2px 5px rgb(173, 76, 98);
+      }
+    b{
+        font-style: oblique;
+        font-size: xx-large;
+        font-weight: 600;
+
+      }
+  form{
+        background-color: rgb(178, 225, 225);
+        font-size: x-large;
+        width: 700px;
+        height: 500px;
+        float: left;
+      }
+ .img1{
+        margin-left: 562px;
+        margin-top: -290px;
+        width: 852px;
+        height: 500px;
+        position: absolute;
+      }
+/*cars section*/
+.root{
+      --secondary-shadow:#a17a69;
+     }
+.skills { 
+       max-width: 68.75rem; 
+       margin: auto; 
+       text-align: center; 
+       margin-top: 40.5rem; 
+      }
+.skill-header { 
+       margin-bottom: 1rem; 
+      }
+.skills-wrapper img { 
+       padding: 1.25rem; 
+      }
+  .skills-wrapper div:last-child{
+       margin-bottom: 50px;
+
+      }
+     *{box-sizing: border-box;
+      }
+.icon { 
+       width: 225px; 
+       height: 200px; 
+      } 
+.icon-card { 
+       background-color: #ffffff; 
+       border-radius: 11px; 
+       box-shadow: 0 3px 10px #a17a69; 
+       padding: 20px; 
+       margin: 10px; 
+      } 
+      /*.icon icon-card img:hover{
+      color: var(--secondary-shadow);
+      border: 2px solid var(--secondary-shadow);
+      }*/
+.foot{
+      background-color: #a17a69;
+      font-size: x-large;
+      }
+  .foot:hover{
+      background-color: crimson;
+      color: #f1eeee;
+      }
+</style>
+<body id="Home">
+<div class="part1">
+    <marquee>
+        Welcome! TO RG CARSHOWROOM....here you can find the best Quality Cars at Affordable price 
+    </marquee>
+        <img src="C:/Users/rosha/OneDrive/Documents/fortunershowroom/logo.jpeg" height="50px" class="logo"/> 
+        <img src="C:/Users/rosha/OneDrive/Documents/fortunershowroom/toyota.png"> <i>Let's Buy the happiness</i>
+       <!--navigation bar-->
+        <ul class="nbar"> 
+         <li><a href="#Home">| Home |</a></li>
+         <li>
+            <a href="#About">| About |</a>
+            <ul class="dropdown"><br>
+             <li><a href="#sell" >Registration Form</a></li>
+            </ul>        
+         </li> 
+       <li>
+        <a href="#Car">| Car's |</a>
+        <ul class="dropdown"><br>
+          <li><a href="#fcar">Fortuner</a></li>
+          <li><a href="#fcar">Innova Crysta</a></li>
+          <li><a href="#fcar">Camry</a></li>
+          <li><a href="#fcar">Glanza</a></li>
+          <li><a href="#fcar">Prius</a></li>
+        </ul>
+       </li>
+        <li>
+            <a href="#Contact">| Contact | </a>
+             <ul class="dropdown"><br>
+               <li><a href="#Manager">Manager</a>
+                <ul>
+                    <li><a>Rohan Gole</a></li>
+                </ul>           
+               </li> 
+             </ul>          
+    </li>   
+    </ul>
+    <h1 class="Welcome">WELCOME TO RG CARs</h1>
+  
+   <div class="book">
+    <h1>EXPERIENCE THE<br>
+        NEW FORTUNER<br><br>
+    BOOK YOUR TEST DRIVE NOW!</h1>
+   </div>
+</div>
+<!--page 2 form section--> 
+<div class="part2">
+  <form id="sell">
+    <b>power-to-overpower-car</b><br><br><br>
+    Name:<input type="text" name="" value=""/><br>
+    Email:<input type="email" name="email">
+    Address:<textarea name="Address"></textarea><br><br> 
+    Phone:</No><input type="number" value=""/> 
+    pincode:<input type="number"/> 
+    <br><br>
+    <h6><input type="checkbox"/>Would you like to Exchange your existing car with Toyota U Trust <br><br>
+    <input type="checkbox"/>  I hereby agree to receive emails, calls and SMS related to promotional activities and services, by or on behalf of TKM.</h6><br>
+    <button type="submit" >SUBMIT</button>
+    <button type="reset" >CANCLE</button>
+    <img src="C:/Users/rosha/OneDrive/Documents/fortunershowroom/fortuner.jpg" class="img1" >
+  </form>
+</div>
+ <!--cars section-->
+ <section class="skills" id="skills"> 
+    <h2 class="skill-header"><b id="fcar">Best Selling CARs </b></h2>
+    <div class="skills-wrapper"> 
+      <div class="first-set animate__animated animate__pulse"> 
+        <img 
+          src="C:\Users\rosha\OneDrive\Documents\fortunershowroom\1.png" 
+          alt="1" 
+          title="Classic Fortuner"
+          loading="lazy" 
+          class="icon icon-card" 
+        /> 
+        <img 
+          src="C:\Users\rosha\OneDrive\Documents\fortunershowroom\3.png" 
+          alt="2" 
+          title="White Toyota Fortuner"
+          loading="lazy" 
+          class="icon icon-card" 
+        /> 
+        <img 
+          src="C:\Users\rosha\OneDrive\Documents\fortunershowroom\5.png"
+          alt="3" 
+          title="Classic Prius"
+          loading="lazy" 
+          class="icon icon-card" 
+        />  
+      </div> 
+      <div class="second-set animate__animated animate__pulse"> 
+        <img 
+          src="4.png" 
+          alt="4"
+          title="Classic Rumion" 
+          loading="lazy" 
+          class="icon icon-card" 
+        /> 
+        <img 
+          src="C:\Users\rosha\OneDrive\Documents\fortunershowroom\innova crysta.jpeg" 
+          alt="5" 
+          title="Classic Camry"
+          loading="lazy" 
+          class="icon icon-card" 
+        /> 
+        <img 
+          src="C:\Users\rosha\OneDrive\Documents\fortunershowroom\land cruiser300.jpeg" 
+          alt="6"
+          title="Classic Glanza" 
+          loading="lazy" 
+          class="icon icon-card" 
+        /> 
+      </div> 
+    </div> 
+  </section> 
+  <footer class="foot" id="Manager">
+     Contact us: Rohan Gole Phone no.:9373655702
+    </footer>
+</body>
+</html>
